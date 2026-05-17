@@ -17,13 +17,13 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(nullable = false)
     private String nombre;
 
-    @Column(unique = true, length = 10, nullable = false)
-    private int rut;
+    @Column(unique = true, length = 12, nullable = false)
+    private String rut;
 
     @Column(nullable = false)
     private String correo;
