@@ -26,13 +26,10 @@ public class Animal {
     private String raza;
 
     @Column(nullable = false)
-    private int edad;
+    private Integer edad;
 
     @Column(nullable = false)
     private String descripcion;
-
-    @Column(nullable = false)
-    private String edad;
 
     @Column(nullable = false)
     private String estado;
