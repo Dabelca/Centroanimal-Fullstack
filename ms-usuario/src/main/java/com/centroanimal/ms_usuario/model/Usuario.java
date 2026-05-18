@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 
 
 @Entity
@@ -25,7 +24,7 @@ public class Usuario {
     @Column(unique = true, length = 12, nullable = false)
     private String rut;
 
-    @Column(nullable = false)
+    @Column(unique = true, nullable = false)
     private String correo;
 
     @Column(nullable = false, length = 11)
