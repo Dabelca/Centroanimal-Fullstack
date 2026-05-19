@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="creación de ms-animales">
-      <change afterPath="$PROJECT_DIR$/ms-animales/src/main/java/com/centro_animal/ms_animales/controller/AnimalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-animales/src/main/java/com/centro_animal/ms_animales/repository/AnimalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-animales/src/main/java/com/centro_animal/ms_animales/service/AnimalService.java" afterDir="false" />
-    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="Controller - postman">
+    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="Creación ms-donaciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-animales/src/main/java/com/centro_animal/ms_animales/model/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-animales/src/main/java/com/centro_animal/ms_animales/model/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/controller/DonacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/controller/DonacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/model/Donacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/model/Donacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/service/DonacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/service/DonacionService.java" afterDir="false" />
     </list>
     <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="controller ms-adopciones" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="28" />
+    <option name="cachedIndexableFilesCount" value="42" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/ms-usuario" />
+        <entry key="$PROJECT_DIR$" value="feature/ms-adopciones" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,10 +78,12 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.MsAdopcionesApplication.executor": "Run",
     "Spring Boot.MsAnimalesApplication.executor": "Run",
+    "Spring Boot.MsDonacionesApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/ms-animales",
+    "git-widget-placeholder": "feature/ms-donaciones",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -96,20 +96,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.MsAnimalesApplication">
-    <configuration name="MsUsuarioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.centroanimal.ms_usuario.MsUsuarioApplication" />
-      <module name="ms-usuario" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.centroanimal.ms_usuario.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.MsDonacionesApplication">
     <configuration name="All in ms-animales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ms-animales" />
       <option name="PACKAGE_NAME" value="" />
@@ -132,6 +119,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MsAdopcionesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="ms-adopciones" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_adopciones.MsAdopcionesApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.centroanimal.ms_adopciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MsAnimalesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="ms-animales" />
@@ -146,12 +147,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MsDonacionesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="ms-donaciones" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_donaciones.MsDonacionesApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.centroanimal.ms_donaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MsDonacionesApplication" />
+        <item itemvalue="Spring Boot.MsAdopcionesApplication" />
         <item itemvalue="Spring Boot.MsAnimalesApplication" />
         <item itemvalue="JUnit.com.centro_animal.ms_animales in ms-animales" />
         <item itemvalue="JUnit.All in ms-animales" />
-        <item itemvalue="Application.MsUsuarioApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +235,47 @@
       <option name="project" value="LOCAL" />
       <updated>1779072485429</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ms-animales Basico">
+      <option name="closed" value="true" />
+      <created>1779078909636</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1779078909636</updated>
+    </task>
+    <task id="LOCAL-00009" summary="creación de ms-adopciones">
+      <option name="closed" value="true" />
+      <created>1779156080153</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1779156080153</updated>
+    </task>
+    <task id="LOCAL-00010" summary="controller ms-adopciones">
+      <option name="closed" value="true" />
+      <created>1779157996590</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1779157996590</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ms-adopciones CRS y CRUD">
+      <option name="closed" value="true" />
+      <created>1779159823305</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1779159823305</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Creación ms-donaciones">
+      <option name="closed" value="true" />
+      <created>1779161726985</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1779161726985</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +311,12 @@
     <MESSAGE value="Controller - postman" />
     <MESSAGE value="ms-usuario basico" />
     <MESSAGE value="creación de ms-animales" />
-    <option name="LAST_COMMIT_MESSAGE" value="creación de ms-animales" />
+    <MESSAGE value="ms-animales Basico" />
+    <MESSAGE value="creación de ms-adopciones" />
+    <MESSAGE value="controller ms-adopciones" />
+    <MESSAGE value="ms-adopciones CRS y CRUD" />
+    <MESSAGE value="Creación ms-donaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creación ms-donaciones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
