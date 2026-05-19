@@ -2,24 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Annotation profile for ms-donaciones" enabled="true">
+      <profile name="Annotation profile for ms-padrinos" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-        </processorPath>
-        <module name="ms-usuario" />
-      </profile>
-      <profile name="Annotation profile for ms-donaciones" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="ms-donaciones" />
+        <module name="ms-usuario" />
+        <module name="ms-padrinos" />
         <module name="ms-animales" />
         <module name="ms-adopciones" />
       </profile>
@@ -34,6 +26,7 @@
       <module name="ms-adopciones" options="-parameters" />
       <module name="ms-animales" options="-parameters" />
       <module name="ms-donaciones" options="-parameters" />
+      <module name="ms-padrinos" options="-parameters" />
       <module name="ms-usuario" options="-parameters" />
     </option>
   </component>
