@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/padrino")
+@RequestMapping("/api/v1/padrinos")
 public class PadrinoController {
 
     @Autowired
@@ -22,7 +22,6 @@ public class PadrinoController {
         if (padrinos.isEmpty()){
             return ResponseEntity.noContent().build();
         }
-        List<Padrino> PadrinoService;
         return ResponseEntity.ok(padrinos);
     }
 
@@ -55,7 +54,7 @@ public class PadrinoController {
     }
 
     @GetMapping("/estado/{estado}")
-    public ResponseEntity<List<Padrino>> buscarPorEstado(@PathVariable Boolean estado) {
+    public ResponseEntity<List<Padrino>> buscarPorEstado(@PathVariable String estado) {
         List<Padrino> padrinos = padrinoService.findByEstado(estado);
         if (padrinos.isEmpty()) {
             return ResponseEntity.noContent().build();
@@ -74,7 +73,7 @@ public class PadrinoController {
     }
 
     @PutMapping("/{id}/estado")
-    public ResponseEntity<Padrino> cambiarEstado(@PathVariable Long id, @RequestParam Boolean estado) {
+    public ResponseEntity<Padrino> cambiarEstado(@PathVariable Long id, @RequestParam String estado) {
         try {
             Padrino padrino = padrinoService.cambiarEstado(id, estado);
             return ResponseEntity.ok(padrino);

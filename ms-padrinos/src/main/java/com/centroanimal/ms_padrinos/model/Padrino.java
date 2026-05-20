@@ -30,6 +30,6 @@ public class Padrino {
     private LocalDate fechaInicio;
 
     @Column(nullable = false)
-    private Boolean estado;
+    private String estado;
 
 }

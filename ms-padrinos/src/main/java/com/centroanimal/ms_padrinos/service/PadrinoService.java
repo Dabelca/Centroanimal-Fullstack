@@ -28,7 +28,7 @@ public class PadrinoService {
             throw new RuntimeException("Usted ya ha adoptado a este animal");
         }
         padrino.setFechaInicio(LocalDate.now());
-        padrino.setEstado(true);
+        padrino.setEstado("ACTIVO");
         return padrinoRepository.save(padrino);
     }
 
@@ -43,11 +43,11 @@ public class PadrinoService {
     }
 
 
-    public List<Padrino> findByEstado (Boolean estado) {
+    public List<Padrino> findByEstado (String  estado) {
         return padrinoRepository.findByEstado(estado);
     }
 
-    public Padrino cambiarEstado (Long id, Boolean estado) {
+    public Padrino cambiarEstado (Long id, String estado) {
         Padrino padrino = padrinoRepository.findById(id).get();
         padrino.setEstado(estado);
         return padrinoRepository.save(padrino);

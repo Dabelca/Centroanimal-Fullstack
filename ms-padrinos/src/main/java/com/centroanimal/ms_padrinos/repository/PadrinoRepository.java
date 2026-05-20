@@ -13,7 +13,7 @@ public interface PadrinoRepository extends JpaRepository<Padrino, Long> {
 
     List<Padrino> findByIdAnimal(Long idAnimal);
 
-    List<Padrino> findByEstado(Boolean estado);
+    List<Padrino> findByEstado(String estado);
     Boolean existsByIdUsuarioAndIdAnimal(Long idUsuario, Long idAnimal);
 
 }
