@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="ms-padrinos">
-      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/controller/VoluntariadoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/model/Voluntariado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/repository/VoluntariadoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/service/VoluntariadoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/resources/db/migration/V1__init_voluntariado.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/MsVoluntariadosApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/controller/VoluntariadoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/model/Voluntariado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/repository/VoluntariadoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/service/VoluntariadoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/test/java/com/centroanimal/ms_voluntariados/MsVoluntariadosApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +43,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/ms-padrinos" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -319,15 +330,7 @@
       <option name="project" value="LOCAL" />
       <updated>1779240192595</updated>
     </task>
-    <task id="LOCAL-00016" summary="ms-padrinos">
-      <option name="closed" value="true" />
-      <created>1779242023947</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1779242023947</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +373,8 @@
     <MESSAGE value="Creación ms-donaciones" />
     <MESSAGE value="Creación ms-padrinos" />
     <MESSAGE value="ms-padrinos" />
-    <option name="LAST_COMMIT_MESSAGE" value="ms-padrinos" />
+    <MESSAGE value="Creación ms-voluntariados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creación ms-voluntariados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
