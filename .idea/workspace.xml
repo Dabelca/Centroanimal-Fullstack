@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="ms-padrinos">
+      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/controller/VoluntariadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/model/Voluntariado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/repository/VoluntariadoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/service/VoluntariadoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/controller/PadrinoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/controller/PadrinoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/model/Padrino.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/model/Padrino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/repository/PadrinoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/repository/PadrinoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/service/PadrinoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/service/PadrinoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/ms-padrinos" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,35 +70,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MsUsuarioApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in ms-animales.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.centro_animal.ms_animales in ms-animales.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MsAdopcionesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsAnimalesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsPadrinosApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/ms-padrinos&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MsUsuarioApplication.executor": "Run",
+    "JUnit.All in ms-animales.executor": "Run",
+    "JUnit.com.centro_animal.ms_animales in ms-animales.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.MsAdopcionesApplication.executor": "Run",
+    "Spring Boot.MsAnimalesApplication.executor": "Run",
+    "Spring Boot.MsPadrinosApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feature/ms-voluntariados",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.MsPadrinosApplication">
     <configuration name="com.centro_animal.ms_animales in ms-animales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ms-animales" />
@@ -316,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779240192595</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ms-padrinos">
+      <option name="closed" value="true" />
+      <created>1779242023947</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1779242023947</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
