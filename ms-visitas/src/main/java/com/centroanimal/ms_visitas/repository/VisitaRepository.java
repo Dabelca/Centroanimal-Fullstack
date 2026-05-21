@@ -19,4 +19,7 @@ public interface VisitaRepository extends JpaRepository<Visita, Long> {
     List<Visita> findByFechaVisita(LocalDate fechaVisita);
 
     List<Visita> findByEstado(String estado);
+
+    boolean existsByIdUsuarioAndFechaVisitaAndEstadoIn(Long idUsuario, LocalDate fechaVisita, List<String> estados);
+
 }
