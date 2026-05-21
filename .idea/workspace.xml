@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="ms-voluntariados" />
+    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="ms-voluntariados controller">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/controller/VoluntariadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/controller/VoluntariadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +82,9 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.MsAdopcionesApplication.executor": "Run",
     "Spring Boot.MsAnimalesApplication.executor": "Run",
+    "Spring Boot.MsDonacionesApplication.executor": "Run",
     "Spring Boot.MsPadrinosApplication.executor": "Run",
+    "Spring Boot.MsVoluntariadosApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "feature/ms-voluntariados",
@@ -94,21 +100,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.MsPadrinosApplication">
-    <configuration name="com.centro_animal.ms_animales in ms-animales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ms-animales" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.centro_animal.ms_animales.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.centro_animal.ms_animales" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.MsVoluntariadosApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ms-usuario" />
       <method v="2">
@@ -176,13 +168,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MsVoluntariadosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="ms-voluntariados" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_voluntariados.MsVoluntariadosApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.centroanimal.ms_voluntariados.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MsPadrinosApplication" />
+        <item itemvalue="Spring Boot.MsVoluntariadosApplication" />
         <item itemvalue="Spring Boot.MsDonacionesApplication" />
+        <item itemvalue="Spring Boot.MsPadrinosApplication" />
         <item itemvalue="Spring Boot.MsAdopcionesApplication" />
         <item itemvalue="Spring Boot.MsAnimalesApplication" />
-        <item itemvalue="JUnit.com.centro_animal.ms_animales in ms-animales" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +328,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779339208670</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ms-voluntariados">
+      <option name="closed" value="true" />
+      <created>1779342321065</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1779342321065</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ms-voluntariados controller">
+      <option name="closed" value="true" />
+      <created>1779377418193</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1779377418193</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +389,8 @@
     <MESSAGE value="ms-padrinos" />
     <MESSAGE value="Creación ms-voluntariados" />
     <MESSAGE value="ms-voluntariados" />
-    <option name="LAST_COMMIT_MESSAGE" value="ms-voluntariados" />
+    <MESSAGE value="ms-voluntariados controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="ms-voluntariados controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
