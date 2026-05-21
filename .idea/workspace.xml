@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="ms-padrinos">
-      <change afterPath="$PROJECT_DIR$/ms-voluntariados/src/main/resources/db/migration/V1__init_voluntariado.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/MsVoluntariadosApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/controller/VoluntariadoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/model/Voluntariado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/repository/VoluntariadoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/java/com/centroanimal/ms_voluntariados/service/VoluntariadoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-voluntariados/src/test/java/com/centroanimal/ms_voluntariados/MsVoluntariadosApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="ms-voluntariados" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +52,9 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8,
@@ -330,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779240192595</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ms-voluntariados">
+      <option name="closed" value="true" />
+      <created>1779339208670</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1779339208670</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +366,8 @@
     <MESSAGE value="Creación ms-padrinos" />
     <MESSAGE value="ms-padrinos" />
     <MESSAGE value="Creación ms-voluntariados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creación ms-voluntariados" />
+    <MESSAGE value="ms-voluntariados" />
+    <option name="LAST_COMMIT_MESSAGE" value="ms-voluntariados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
