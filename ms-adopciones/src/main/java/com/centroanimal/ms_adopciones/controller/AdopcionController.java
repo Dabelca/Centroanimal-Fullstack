@@ -1,7 +1,9 @@
 package com.centroanimal.ms_adopciones.controller;
 
+import com.centroanimal.ms_adopciones.dto.AdopcionDTO;
 import com.centroanimal.ms_adopciones.model.Adopcion;
 import com.centroanimal.ms_adopciones.service.AdopcionService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -54,8 +56,11 @@ public class AdopcionController {
     }
 
     @PostMapping
-    public ResponseEntity<Adopcion> crear(@RequestBody Adopcion adopcion) {
+    public ResponseEntity<Adopcion> crear(@Valid @RequestBody AdopcionDTO adopcionDTO) {
         try {
+            Adopcion adopcion = new Adopcion();
+            adopcion.setIdUsuario(adopcionDTO.getIdUsuario());
+            adopcion.setIdAnimal(adopcionDTO.getIdAnimal());
             Adopcion nuevaAdopcion = adopcionService.save(adopcion);
             return ResponseEntity.status(HttpStatus.CREATED).body(nuevaAdopcion);
         } catch (Exception e) {

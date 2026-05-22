@@ -1,7 +1,9 @@
 package com.centro_animal.ms_animales.controller;
 
+import com.centro_animal.ms_animales.dto.AnimalDTO;
 import com.centro_animal.ms_animales.model.Animal;
 import com.centro_animal.ms_animales.service.AnimalService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -54,9 +56,14 @@ public class AnimalController {
     }
 
     @PostMapping
-    public ResponseEntity<Animal> crear(@RequestBody Animal animal) {
-        Animal animalNuevo = animalService.save(animal);
-        return ResponseEntity.status(HttpStatus.CREATED).body(animalNuevo);
+    public ResponseEntity<Animal> crear(@Valid @RequestBody AnimalDTO animalDTO) {
+        Animal animal = new Animal();
+        animal.setNombre(animalDTO.getNombre());
+        animal.setEspecie(animalDTO.getEspecie());
+        animal.setRaza(animalDTO.getRaza());
+        animal.setEdad(animalDTO.getEdad());
+        animal.setEstado(animalDTO.getEstado());
+        return ResponseEntity.status(HttpStatus.CREATED).body(animalService.save(animal));
     }
 
     @PutMapping("/{id}")

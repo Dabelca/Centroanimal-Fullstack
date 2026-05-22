@@ -1,7 +1,9 @@
 package com.centroanimal.ms_padrinos.controller;
 
+import com.centroanimal.ms_padrinos.dto.PadrinoDTO;
 import com.centroanimal.ms_padrinos.model.Padrino;
 import com.centroanimal.ms_padrinos.service.PadrinoService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -63,10 +65,13 @@ public class PadrinoController {
     }
 
     @PostMapping
-    public ResponseEntity<Padrino> crear(@RequestBody Padrino padrino) {
+    public ResponseEntity<Padrino> crear(@Valid @RequestBody PadrinoDTO padrinoDTO) {
         try {
-            Padrino nuevoPadrino = padrinoService.save(padrino);
-            return ResponseEntity.status(HttpStatus.CREATED).body(nuevoPadrino);
+            Padrino padrino = new Padrino();
+            padrino.setIdUsuario(padrinoDTO.getIdUsuario());
+            padrino.setIdAnimal(padrinoDTO.getIdAnimal());
+            padrino.setMontoCuota(padrinoDTO.getMontoCuota());
+            return ResponseEntity.status(HttpStatus.CREATED).body(padrinoService.save(padrino));
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }

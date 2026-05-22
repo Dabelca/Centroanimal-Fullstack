@@ -1,7 +1,9 @@
 package com.centroanimal.ms_reportes.controller;
 
+import com.centroanimal.ms_reportes.dto.ReporteDTO;
 import com.centroanimal.ms_reportes.model.Reporte;
 import com.centroanimal.ms_reportes.service.ReporteService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -57,8 +59,11 @@ public class ReporteController {
     }
 
     @PostMapping
-    public ResponseEntity<Reporte> crear(@RequestBody Reporte reporte){
+    public ResponseEntity<Reporte> crear(@Valid @RequestBody ReporteDTO reporteDTO){
         try {
+            Reporte reporte = new Reporte();
+            reporte.setTipoReporte(reporteDTO.getTipoReporte());
+            reporte.setDescripcion(reporteDTO.getDescripcion());
             Reporte nuevo = reporteService.save(reporte);
             return ResponseEntity.status(HttpStatus.CREATED).body(nuevo);
         }catch (Exception e) {
