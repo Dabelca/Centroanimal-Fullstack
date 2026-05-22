@@ -25,7 +25,7 @@ public class Notificacion {
     private String mensaje;
 
     @Column(nullable = false)
-    private String tipo;
+    private String tipoNotificacion;
 
     @Column(nullable = false)
     private LocalDate fechaNotificacion;
