@@ -1,7 +1,9 @@
 package com.centroanimal.ms_visitas.controller;
 
+import com.centroanimal.ms_visitas.dto.VisitaDTO;
 import com.centroanimal.ms_visitas.model.Visita;
 import com.centroanimal.ms_visitas.service.VisitaService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +30,12 @@ public class VisitaController {
     }
 
     @PostMapping
-    public ResponseEntity<Visita> crear(@RequestBody Visita visita) {
+    public ResponseEntity<Visita> crear(@Valid @RequestBody VisitaDTO visitaDTO) {
+        Visita visita = new Visita();
+        visita.setIdUsuario(visitaDTO.getIdUsuario());
+        visita.setIdAnimal(visitaDTO.getIdAnimal());
+        visita.setTipoVisita(visitaDTO.getTipoVisita());
+        visita.setFechaVisita(visitaDTO.getFechaVisita());
         return ResponseEntity.status(HttpStatus.CREATED).body(visitaService.crear(visita));
     }
 
