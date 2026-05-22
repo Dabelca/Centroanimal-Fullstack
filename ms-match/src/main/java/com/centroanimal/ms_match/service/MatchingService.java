@@ -18,8 +18,7 @@ public class MatchingService {
     }
 
     public Matching findById(Long id) {
-        return matchingRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Matching no encontrado con id: " + id));
+        return matchingRepository.findById(id).get();
     }
 
     public Matching crear(Matching matching) {
@@ -33,8 +32,6 @@ public class MatchingService {
     }
 
     public void eliminar(Long id) {
-        matchingRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Matching no encontrado con id: " + id));
         matchingRepository.deleteById(id);
     }
 
