@@ -1,7 +1,7 @@
 # 🐾 Centro Animal - Sistema de Microservicios
 
 ## Integrantes
-- Daniela Belca
+- Daniela Beltrán Calvo 
 
 ## Descripción
 Sistema de gestión integral para un centro animal, desarrollado con arquitectura de microservicios en Spring Boot. 
