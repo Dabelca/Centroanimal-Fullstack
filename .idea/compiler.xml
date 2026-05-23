@@ -2,11 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Annotation profile for ms-padrinos" enabled="true">
+      <profile name="Annotation profile for ms-usuario" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="ms-donaciones" />
@@ -14,6 +15,15 @@
         <module name="ms-padrinos" />
         <module name="ms-animales" />
         <module name="ms-adopciones" />
+      </profile>
+      <profile name="Annotation profile for ms-voluntariados" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="ms-voluntariados" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +38,7 @@
       <module name="ms-donaciones" options="-parameters" />
       <module name="ms-padrinos" options="-parameters" />
       <module name="ms-usuario" options="-parameters" />
+      <module name="ms-voluntariados" options="-parameters" />
     </option>
   </component>
 </project>
