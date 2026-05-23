@@ -1,5 +1,6 @@
 package com.centroanimal.ms_adopciones.service;
 
+import com.centroanimal.ms_adopciones.client.AnimalClient;
 import com.centroanimal.ms_adopciones.model.Adopcion;
 import com.centroanimal.ms_adopciones.repository.AdopcionRepository;
 import jakarta.transaction.Transactional;
@@ -20,6 +21,9 @@ public class AdopcionService {
     private AdopcionRepository adopcionRepository;
     private static final Logger log = LoggerFactory.getLogger(AdopcionService.class);
 
+    @Autowired
+    private AnimalClient animalClient;
+
     public List<Adopcion> findAll(){
         log.info("Listando todas las adopciones");
         return adopcionRepository.findAll();
@@ -32,9 +36,15 @@ public class AdopcionService {
 
     public Adopcion save(Adopcion adopcion) {
         log.info("Creando adopción para animal: {}", adopcion.getIdAnimal());
+        try {
+            animalClient.buscarPorId(adopcion.getIdAnimal());
+        } catch (Exception e) {
+            log.warn("Animal no encontrado con id: {}", adopcion.getIdAnimal());
+            throw new RuntimeException("El animal con id " + adopcion.getIdAnimal() + " no existe.");
+        }
         if (adopcionRepository.existsByIdAnimal(adopcion.getIdAnimal())) {
             log.warn("El animal {} ya fue adoptado", adopcion.getIdAnimal());
-            throw  new RuntimeException("Este animal ya fue adoptado");
+            throw new RuntimeException("Este animal ya fue adoptado");
         }
         adopcion.setFechaAdopcion(LocalDate.now());
         adopcion.setEstado("PENDIENTE");
