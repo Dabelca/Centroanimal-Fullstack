@@ -1,5 +1,6 @@
 package com.centroanimal.ms_padrinos.service;
 
+import com.centroanimal.ms_padrinos.client.AnimalClient;
 import com.centroanimal.ms_padrinos.model.Padrino;
 import com.centroanimal.ms_padrinos.repository.PadrinoRepository;
 import jakarta.transaction.Transactional;
@@ -18,6 +19,9 @@ public class PadrinoService {
     private PadrinoRepository padrinoRepository;
     private static final Logger log = LoggerFactory.getLogger(PadrinoService.class);
 
+    @Autowired
+    private AnimalClient animalClient;
+
     public List<Padrino> findAll() {
         log.info("Listando todos los padrinos");
         return padrinoRepository.findAll();
@@ -30,6 +34,12 @@ public class PadrinoService {
 
     public Padrino save(Padrino padrino) {
         log.info("El usuario: {} es nuevo padrino para el animal: {}", padrino.getIdUsuario(), padrino.getIdAnimal());
+        try {
+            animalClient.buscarPorId(padrino.getIdAnimal());
+        } catch (Exception e) {
+            log.warn("Animal no encontrado con id: {}", padrino.getIdAnimal());
+            throw new RuntimeException("El animal con id " + padrino.getIdAnimal() + " no existe.");
+        }
         if (padrinoRepository.existsByIdUsuarioAndIdAnimal(padrino.getIdUsuario(), padrino.getIdAnimal())) {
             log.warn("El usuario {} ya es padrino del animal {}", padrino.getIdUsuario(), padrino.getIdAnimal());
             throw new RuntimeException("Usted ya ha adoptado a este animal");

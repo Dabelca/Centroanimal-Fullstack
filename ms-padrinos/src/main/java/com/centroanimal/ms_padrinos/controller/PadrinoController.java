@@ -66,15 +66,12 @@ public class PadrinoController {
 
     @PostMapping
     public ResponseEntity<Padrino> crear(@Valid @RequestBody PadrinoDTO padrinoDTO) {
-        try {
+
             Padrino padrino = new Padrino();
             padrino.setIdUsuario(padrinoDTO.getIdUsuario());
             padrino.setIdAnimal(padrinoDTO.getIdAnimal());
             padrino.setMontoCuota(padrinoDTO.getMontoCuota());
             return ResponseEntity.status(HttpStatus.CREATED).body(padrinoService.save(padrino));
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
-        }
     }
 
     @PutMapping("/{id}/estado")

@@ -57,15 +57,10 @@ public class AdopcionController {
 
     @PostMapping
     public ResponseEntity<Adopcion> crear(@Valid @RequestBody AdopcionDTO adopcionDTO) {
-        try {
-            Adopcion adopcion = new Adopcion();
-            adopcion.setIdUsuario(adopcionDTO.getIdUsuario());
-            adopcion.setIdAnimal(adopcionDTO.getIdAnimal());
-            Adopcion nuevaAdopcion = adopcionService.save(adopcion);
-            return ResponseEntity.status(HttpStatus.CREATED).body(nuevaAdopcion);
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
-        }
+        Adopcion adopcion = new Adopcion();
+        adopcion.setIdUsuario(adopcionDTO.getIdUsuario());
+        adopcion.setIdAnimal(adopcionDTO.getIdAnimal());
+        return ResponseEntity.status(HttpStatus.CREATED).body(adopcionService.save(adopcion));
     }
 
     @PutMapping("/{id}/estado")
