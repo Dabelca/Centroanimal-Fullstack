@@ -1,8 +1,10 @@
 package com.centroanimal.ms_voluntariados.controller;
 
 
+import com.centroanimal.ms_voluntariados.dto.VoluntariadoDTO;
 import com.centroanimal.ms_voluntariados.model.Voluntariado;
 import com.centroanimal.ms_voluntariados.service.VoluntariadoService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -76,10 +78,12 @@ public class VoluntariadoController {
     }
 
     @PostMapping
-    public ResponseEntity<Voluntariado> crear(@RequestBody Voluntariado voluntariado) {
+    public ResponseEntity<Voluntariado> crear(@Valid @RequestBody VoluntariadoDTO voluntariadoDTO) {
         try {
-            Voluntariado nuevo = voluntariadoService.save(voluntariado);
-            return ResponseEntity.status(HttpStatus.CREATED).body(nuevo);
+            Voluntariado voluntariado = new Voluntariado();
+            voluntariado.setIdUsuario(voluntariadoDTO.getIdUsuario());
+            voluntariado.setHorario(voluntariadoDTO.getHorario());
+            return ResponseEntity.status(HttpStatus.CREATED).body(voluntariadoService.save(voluntariado));
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }

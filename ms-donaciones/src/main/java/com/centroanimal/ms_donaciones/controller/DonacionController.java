@@ -1,7 +1,9 @@
 package com.centroanimal.ms_donaciones.controller;
 
+import com.centroanimal.ms_donaciones.dto.DonacionDTO;
 import com.centroanimal.ms_donaciones.model.Donacion;
 import com.centroanimal.ms_donaciones.service.DonacionService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -54,10 +56,13 @@ public class DonacionController {
     }
 
     @PostMapping
-    public ResponseEntity<Donacion> crear(@RequestBody Donacion donacion) {
+    public ResponseEntity<Donacion> crear(@Valid @RequestBody DonacionDTO donacionDTO) {
         try {
-            Donacion nuevaDonacion = donacionService.save(donacion);
-            return ResponseEntity.status(HttpStatus.CREATED).body(nuevaDonacion);
+            Donacion donacion = new Donacion();
+            donacion.setIdUsuario(donacionDTO.getIdUsuario());
+            donacion.setMonto(donacionDTO.getMonto());
+            donacion.setMensaje(donacionDTO.getMensaje());
+            return ResponseEntity.status(HttpStatus.CREATED).body(donacionService.save(donacion));
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }

@@ -1,7 +1,9 @@
 package com.centroanimal.ms_match.controller;
 
+import com.centroanimal.ms_match.dto.MatchingDTO;
 import com.centroanimal.ms_match.model.Matching;
 import com.centroanimal.ms_match.service.MatchingService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +30,12 @@ public class MatchingController {
     }
 
     @PostMapping
-    public ResponseEntity<Matching> crear(@RequestBody Matching matching) {
+    public ResponseEntity<Matching> crear(@Valid @RequestBody MatchingDTO matchingDTO) {
+        Matching matching = new Matching();
+        matching.setIdUsuario(matchingDTO.getIdUsuario());
+        matching.setEspeciePreferida(matchingDTO.getEspeciePreferida());
+        matching.setTamanoPreferido(matchingDTO.getTamanoPreferido());
+        matching.setEdadPreferida(matchingDTO.getEdadPreferida());
         return ResponseEntity.status(HttpStatus.CREATED).body(matchingService.crear(matching));
     }
 

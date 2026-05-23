@@ -1,7 +1,9 @@
 package com.centroanimal.ms_usuario.controller;
 
+import com.centroanimal.ms_usuario.dto.UsuarioDTO;
 import com.centroanimal.ms_usuario.model.Usuario;
 import com.centroanimal.ms_usuario.service.UsuarioService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,9 +28,16 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity<Usuario> crear(@RequestBody Usuario usuario) {
-        Usuario usuarioNuevo = usuarioService.save(usuario);
-        return ResponseEntity.status(HttpStatus.CREATED).body(usuarioNuevo);
+    public ResponseEntity<Usuario> crear(@Valid @RequestBody UsuarioDTO usuarioDTO) {
+        Usuario usuario = new Usuario();
+        usuario.setNombre(usuarioDTO.getNombre());
+        usuario.setRut(usuarioDTO.getRut());
+        usuario.setCorreo(usuarioDTO.getCorreo());
+        usuario.setTelefono(usuarioDTO.getTelefono());
+        usuario.setDireccion(usuarioDTO.getDireccion());
+        usuario.setClave(usuarioDTO.getClave());
+        usuario.setRol(usuarioDTO.getRol());
+        return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.save(usuario));
     }
 
     @GetMapping("/{id}")

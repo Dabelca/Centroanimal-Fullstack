@@ -1,7 +1,9 @@
 package com.centroanimal.ms_notificaciones.controller;
 
+import com.centroanimal.ms_notificaciones.dto.NotificacionDTO;
 import com.centroanimal.ms_notificaciones.model.Notificacion;
 import com.centroanimal.ms_notificaciones.service.NotificacionService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,7 +30,11 @@ public class NotificacionController {
     }
 
     @PostMapping
-    public ResponseEntity<Notificacion> crear(@RequestBody Notificacion notificacion) {
+    public ResponseEntity<Notificacion> crear(@Valid @RequestBody NotificacionDTO notificacionDTO) {
+        Notificacion notificacion = new Notificacion();
+        notificacion.setIdUsuario(notificacionDTO.getIdUsuario());
+        notificacion.setMensaje(notificacionDTO.getMensaje());
+        notificacion.setTipoNotificacion(notificacionDTO.getTipoNotificacion());
         return ResponseEntity.status(HttpStatus.CREATED).body(notificacionService.save(notificacion));
     }
 
