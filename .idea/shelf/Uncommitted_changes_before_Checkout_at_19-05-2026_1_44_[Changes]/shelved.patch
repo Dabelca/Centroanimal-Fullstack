@@ -1,0 +1,86 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Annotation profile for ms-adopciones\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <processorPath useClasspath=\"false\">\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n        </processorPath>\r\n        <module name=\"ms-adopciones\" />\r\n      </profile>\r\n      <profile name=\"Annotation profile for ms-usuario\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <processorPath useClasspath=\"false\">\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n        </processorPath>\r\n        <module name=\"ms-usuario\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n  </component>\r\n  <component name=\"JavacSettings\">\r\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\r\n      <module name=\"ms-usuario\" options=\"-parameters\" />\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 93cc95fe4d0218b893f7e1d603fc4924d2a26c12)
++++ b/.idea/compiler.xml	(date 1779169356180)
+@@ -2,28 +2,34 @@
+ <project version="4">
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+-      <profile name="Annotation profile for ms-adopciones" enabled="true">
++      <profile name="Annotation profile for ms-usuario" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+         <processorPath useClasspath="false">
+           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
++          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+         </processorPath>
+-        <module name="ms-adopciones" />
++        <module name="ms-usuario" />
+       </profile>
+-      <profile name="Annotation profile for ms-usuario" enabled="true">
++      <profile name="Annotation profile for ms-donaciones" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+         <processorPath useClasspath="false">
+           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+         </processorPath>
+-        <module name="ms-usuario" />
++        <module name="ms-donaciones" />
+       </profile>
+     </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="ms-adopciones" target="21" />
++      <module name="ms-animales" target="21" />
++    </bytecodeTargetLevel>
+   </component>
+   <component name="JavacSettings">
+     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
++      <module name="ms-donaciones" options="-parameters" />
+       <module name="ms-usuario" options="-parameters" />
+     </option>
+   </component>
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Encoding\">\r\n    <file url=\"file://$PROJECT_DIR$/ms-usuario/src/main/java\" charset=\"UTF-8\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+--- a/.idea/encodings.xml	(revision 93cc95fe4d0218b893f7e1d603fc4924d2a26c12)
++++ b/.idea/encodings.xml	(date 1779169356208)
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/ms-donaciones/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/ms-usuario/src/main/java" charset="UTF-8" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/ms-usuario/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" default=\"true\" project-jdk-name=\"openjdk-26\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 93cc95fe4d0218b893f7e1d603fc4924d2a26c12)
++++ b/.idea/misc.xml	(date 1779169356198)
+@@ -5,6 +5,7 @@
+     <option name="originalFiles">
+       <list>
+         <option value="$PROJECT_DIR$/ms-usuario/pom.xml" />
++        <option value="$PROJECT_DIR$/ms-donaciones/pom.xml" />
+       </list>
+     </option>
+   </component>
