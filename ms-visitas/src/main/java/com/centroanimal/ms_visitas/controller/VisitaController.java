@@ -1,6 +1,7 @@
 package com.centroanimal.ms_visitas.controller;
 
 import com.centroanimal.ms_visitas.dto.VisitaDTO;
+import com.centroanimal.ms_visitas.dto.VisitaUpdateDTO;
 import com.centroanimal.ms_visitas.model.Visita;
 import com.centroanimal.ms_visitas.service.VisitaService;
 import jakarta.validation.Valid;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.centroanimal.ms_visitas.dto.VisitaUpdateDTO;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -40,8 +42,8 @@ public class VisitaController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Visita> actualizar(@PathVariable Long id, @RequestBody Visita visita) {
-        return ResponseEntity.ok(visitaService.actualizar(id, visita));
+    public ResponseEntity<Visita> actualizar(@PathVariable Long id, @Valid @RequestBody VisitaUpdateDTO visitaUpdateDTO) {
+        return ResponseEntity.ok(visitaService.actualizar(id, visitaUpdateDTO));
     }
 
     @PutMapping("/{id}/cancelar")

@@ -1,0 +1,24 @@
+$kind: http-request
+name: Crear usuario 5
+url: ""
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Andres Martínez\",\r
+
+    \    \"rut\": \"33445566-7\",\r
+
+    \    \"correo\": \"ana@gmail.com\",\r
+
+    \    \"telefono\": \"933445566\",\r
+
+    \    \"direccion\": \"Jr. Las Rosas 654\",\r
+
+    \    \"clave\": \"ana2024\",\r
+
+    \    \"rol\": \"PADRINO\"\r
+
+    }"
+order: 4481340978531190

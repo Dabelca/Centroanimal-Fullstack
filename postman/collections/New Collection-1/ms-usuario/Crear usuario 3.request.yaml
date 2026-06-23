@@ -1,0 +1,24 @@
+$kind: http-request
+name: Crear usuario 3
+url: http://localhost:8080/api/v1/usuarios
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"María González\",\r
+
+    \    \"rut\": \"11223344-5\",\r
+
+    \    \"correo\": \"maria@gmail.com\",\r
+
+    \    \"telefono\": \"911223344\",\r
+
+    \    \"direccion\": \"Pasaje Las Flores 789\",\r
+
+    \    \"clave\": \"abcd\",\r
+
+    \    \"rol\": \"ADOPTANTE\"\r
+
+    }"
+order: 3756173121252248

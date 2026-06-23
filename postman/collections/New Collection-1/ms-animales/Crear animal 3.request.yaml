@@ -1,0 +1,22 @@
+$kind: http-request
+name: Crear animal 3
+url: ""
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Doña Tere\",\r
+
+    \    \"especie\": \"Tortuga\",\r
+
+    \    \"raza\": \"Tortuga de tierra\",\r
+
+    \    \"edad\": 8,\r
+
+    \    \"descripcion\": \"Tortuga tranquila y longeva, fácil de cuidar\",\r
+
+    \    \"estado\": \"DISPONIBLE\"\r
+
+    }"
+order: 2698975691653830

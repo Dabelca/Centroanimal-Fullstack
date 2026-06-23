@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.centroanimal.ms_visitas.dto.VisitaUpdateDTO;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -66,16 +67,16 @@ public class VisitaService {
         return visitaRepository.save(visita);
     }
 
-    public Visita actualizar(Long id, Visita visitaActualizada) {
+    public Visita actualizar(Long id, VisitaUpdateDTO dto) {
         log.info("Actualizando visita con id: {}", id);
         Visita visita = visitaRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Visita no encontrada con id: " + id));
 
-        visita.setIdUsuario(visitaActualizada.getIdUsuario());
-        visita.setIdAnimal(visitaActualizada.getIdAnimal());
-        visita.setTipoVisita(visitaActualizada.getTipoVisita());
-        visita.setFechaVisita(visitaActualizada.getFechaVisita());
-        visita.setEstado(visitaActualizada.getEstado());
+        visita.setIdUsuario(dto.getIdUsuario());
+        visita.setIdAnimal(dto.getIdAnimal());
+        visita.setTipoVisita(dto.getTipoVisita());
+        visita.setFechaVisita(dto.getFechaVisita());
+        visita.setEstado(dto.getEstado());
 
         log.info("Visita actualizada exitosamente");
         return visitaRepository.save(visita);
