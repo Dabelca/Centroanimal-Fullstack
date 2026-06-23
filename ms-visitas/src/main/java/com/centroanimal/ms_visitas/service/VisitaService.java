@@ -1,6 +1,6 @@
 package com.centroanimal.ms_visitas.service;
 
-import com.centroanimal.ms_visitas.client.AnimalClient;
+import com.centroanimal.ms_visitas.client.AnimalClientService;
 import com.centroanimal.ms_visitas.model.Visita;
 import com.centroanimal.ms_visitas.repository.VisitaRepository;
 import org.slf4j.Logger;
@@ -22,7 +22,7 @@ public class VisitaService {
     private static final Logger log = LoggerFactory.getLogger(VisitaService.class);
 
     @Autowired
-    private AnimalClient animalClient;
+    private AnimalClientService animalClientService;
 
     public List<Visita> findAll(){
         log.info("Listando todas las visitas");
@@ -41,12 +41,7 @@ public class VisitaService {
             throw new RuntimeException("La fecha de visita no es valida");
         }
         if ("VISITA_ANIMAL".equals(visita.getTipoVisita())) {
-            try {
-                animalClient.buscarPorId(visita.getIdAnimal());
-            } catch (Exception e) {
-                log.warn("Animal no encontrado con id: {}", visita.getIdAnimal());
-                throw new RuntimeException("El animal con id " + visita.getIdAnimal() + " no existe.");
-            }
+            animalClientService.verificarAnimalExiste(visita.getIdAnimal());
         }
         if ("VISITA_CENTRO".equals(visita.getTipoVisita()) && visita.getIdAnimal() != null){log.warn("Visita de tipo VISITA_CENTRO no requiere idAnimal");
             throw new RuntimeException("No requiere indicar un animal para visita de tipo VISITA_CENTRO");
