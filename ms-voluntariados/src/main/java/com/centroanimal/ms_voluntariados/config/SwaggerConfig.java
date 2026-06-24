@@ -1,4 +1,4 @@
-package com.centroanimal.ms_reportes.config;
+package com.centroanimal.ms_voluntariados.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -11,8 +11,8 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("Centro Animal - Microservicio Reportes")
+                        .title("Centro Animal - Microservicio Voluntarios")
                         .version("1.0")
-                        .description("API para la gestión de los reportes del centro"));
+                        .description("API para la gestión de los voluntarios del centro"));
     }
 }
