@@ -10,52 +10,52 @@ spring:
         webmvc:
           routes:
             - id: ms-usuario
-              uri: http://localhost:9090
+              uri: http://ms-usuario:9090
               predicates:
                 - Path=/api/v1/usuarios/**
 
             - id: ms-animales
-              uri: http://localhost:9091
+              uri: http://ms-animales:9091
               predicates:
                 - Path=/api/v1/animales/**
 
             - id: ms-adopciones
-              uri: http://localhost:9092
+              uri: http://ms-adopciones:9092
               predicates:
                 - Path=/api/v1/adopciones/**
 
             - id: ms-donaciones
-              uri: http://localhost:9093
+              uri: http://ms-donaciones:9093
               predicates:
                 - Path=/api/v1/donaciones/**
 
             - id: ms-padrinos
-              uri: http://localhost:9094
+              uri: http://ms-padrinos:9094
               predicates:
                 - Path=/api/v1/padrinos/**
 
             - id: ms-voluntariados
-              uri: http://localhost:9095
+              uri: http://ms-voluntariados:9095
               predicates:
                 - Path=/api/v1/voluntariados/**
 
             - id: ms-visitas
-              uri: http://localhost:9096
+              uri: http://ms-visitas:9096
               predicates:
                 - Path=/api/visitas/**
 
             - id: ms-match
-              uri: http://localhost:9097
+              uri: http://ms-match:9097
               predicates:
                 - Path=/api/matchings/**
 
             - id: ms-notificaciones
-              uri: http://localhost:9098
+              uri: http://ms-notificaciones:9098
               predicates:
                 - Path=/api/notificaciones/**
 
             - id: ms-reportes
-              uri: http://localhost:9099
+              uri: http://ms-reportes:9099
               predicates:
                 - Path=/api/v1/reportes/**
 
