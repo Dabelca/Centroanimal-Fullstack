@@ -1,0 +1,188 @@
+services:
+  mysql-local:
+    image: mysql:8.0
+    container_name: mysql-docker
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks:
+      - centroanimal-network
+
+  ms-usuario:
+    build: ./ms-usuario
+    container_name: ms-usuario
+    ports:
+      - "9090:9090"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_usuario?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-animales:
+    build: ./ms-animales
+    container_name: ms-animales
+    ports:
+      - "9091:9091"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_animales?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-adopciones:
+    build: ./ms-adopciones
+    container_name: ms-adopciones
+    ports:
+      - "9092:9092"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_adopciones?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-donaciones:
+    build: ./ms-donaciones
+    container_name: ms-donaciones
+    ports:
+      - "9093:9093"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_donaciones?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-padrinos:
+    build: ./ms-padrinos
+    container_name: ms-padrinos
+    ports:
+      - "9094:9094"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_padrinos?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-voluntariados:
+    build: ./ms-voluntariados
+    container_name: ms-voluntariados
+    ports:
+      - "9095:9095"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_voluntariados?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-visitas:
+    build: ./ms-visitas
+    container_name: ms-visitas
+    ports:
+      - "9096:9096"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_visitas?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-match:
+    build: ./ms-match
+    container_name: ms-match
+    ports:
+      - "9097:9097"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_match?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-notificaciones:
+    build: ./ms-notificaciones
+    container_name: ms-notificaciones
+    ports:
+      - "9098:9098"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_notificaciones?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-reportes:
+    build: ./ms-reportes
+    container_name: ms-reportes
+    ports:
+      - "9099:9099"
+    depends_on:
+      mysql-local:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_reportes?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - centroanimal-network
+
+  ms-gateway:
+    build: ./ms-gateway
+    container_name: ms-gateway
+    ports:
+      - "9010:9010"
+    depends_on:
+      - ms-animales
+      - ms-usuario
+    networks:
+      - centroanimal-network
+
+volumes:
+  mysql_data:
+
+networks:
+  centroanimal-network:
+    driver: bridge
