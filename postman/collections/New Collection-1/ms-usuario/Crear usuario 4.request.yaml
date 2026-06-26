@@ -1,0 +1,24 @@
+$kind: http-request
+name: Crear usuario 4
+url: http://localhost:8080/api/v1/usuarios
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Juan Pérez\",\r
+
+    \    \"rut\": \"55667788-9\",\r
+
+    \    \"correo\": \"juan@gmail.com\",\r
+
+    \    \"telefono\": \"955667788\",\r
+
+    \    \"direccion\": \"Av. Los Olmos 321\",\r
+
+    \    \"clave\": \"pass123\",\r
+
+    \    \"rol\": \"VOLUNTARIO\"\r
+
+    }"
+order: 4107280644772088

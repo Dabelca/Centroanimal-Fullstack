@@ -1,0 +1,64 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: ms-usuario
+              uri: http://ms-usuario:9090
+              predicates:
+                - Path=/api/v1/usuarios/**
+
+            - id: ms-animales
+              uri: http://ms-animales:9091
+              predicates:
+                - Path=/api/v1/animales/**
+
+            - id: ms-adopciones
+              uri: http://ms-adopciones:9092
+              predicates:
+                - Path=/api/v1/adopciones/**
+
+            - id: ms-donaciones
+              uri: http://ms-donaciones:9093
+              predicates:
+                - Path=/api/v1/donaciones/**
+
+            - id: ms-padrinos
+              uri: http://ms-padrinos:9094
+              predicates:
+                - Path=/api/v1/padrinos/**
+
+            - id: ms-voluntariados
+              uri: http://ms-voluntariados:9095
+              predicates:
+                - Path=/api/v1/voluntariados/**
+
+            - id: ms-visitas
+              uri: http://ms-visitas:9096
+              predicates:
+                - Path=/api/visitas/**
+
+            - id: ms-match
+              uri: http://ms-match:9097
+              predicates:
+                - Path=/api/matchings/**
+
+            - id: ms-notificaciones
+              uri: http://ms-notificaciones:9098
+              predicates:
+                - Path=/api/notificaciones/**
+
+            - id: ms-reportes
+              uri: http://ms-reportes:9099
+              predicates:
+                - Path=/api/v1/reportes/**
+
+eureka:
+  client:
+    enabled: false

@@ -1,0 +1,22 @@
+$kind: http-request
+name: Crear animal 2
+url: http://localhost:8081/api/v1/animales
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Señor bigote\",\r
+
+    \    \"especie\": \"GATO\",\r
+
+    \    \"raza\": \"Mixto\",\r
+
+    \    \"edad\": 2,\r
+
+    \    \"estado\": \"DISPONIBLE\",\r
+
+    \    \"descripcion\": \"Gato tranquilo y cariñoso\"\r
+
+    }"
+order: 2214199269116864

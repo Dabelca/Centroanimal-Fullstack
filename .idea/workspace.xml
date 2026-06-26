@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="Creación de ms-visitas">
-      <change afterPath="$PROJECT_DIR$/ms-visitas/src/main/resources/db/migration/V2__init_visitas.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="Docker">
+      <change afterPath="$PROJECT_DIR$/ms-adopciones/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-padrinos/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-visitas/src/main/resources/application-docker.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/controller/VisitaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/controller/VisitaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/repository/VisitaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/repository/VisitaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/service/VisitaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/service/VisitaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-adopciones/src/main/java/com/centroanimal/ms_adopciones/client/AnimalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-adopciones/src/main/java/com/centroanimal/ms_adopciones/client/AnimalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-adopciones/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-adopciones/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/client/AnimalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/client/AnimalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/client/AnimalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/client/AnimalClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-visitas/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-visitas/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,20 +22,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="71" />
+    <option name="cachedIndexableFilesCount" value="269" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/ms-voluntariados" />
+        <entry key="$PROJECT_DIR$" value="feature/APIGateway" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +80,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.MsUsuarioApplication.executor": "Run",
+    "JUnit.AdopcionServiceTest.executor": "Run",
+    "JUnit.All in ms-adopciones.executor": "Run",
     "JUnit.All in ms-animales.executor": "Run",
+    "JUnit.AnimalServiceTest.executor": "Run",
+    "JUnit.DonacionServiceTest.executor": "Run",
+    "JUnit.MatchingServiceTest.executor": "Run",
+    "JUnit.MsMatchApplicationTests.executor": "Run",
+    "JUnit.NotificacionServiceTest.executor": "Run",
+    "JUnit.PadrinoServiceTest.executor": "Run",
+    "JUnit.ReporteServiceTest.executor": "Run",
+    "JUnit.UsuarioServiceTest.executor": "Run",
+    "JUnit.VisitaServiceTest.executor": "Run",
+    "JUnit.VoluntariadoServiceTest.executor": "Run",
     "JUnit.com.centro_animal.ms_animales in ms-animales.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -89,14 +103,21 @@
     "Spring Boot.MsAdopcionesApplication.executor": "Run",
     "Spring Boot.MsAnimalesApplication.executor": "Run",
     "Spring Boot.MsDonacionesApplication.executor": "Run",
+    "Spring Boot.MsGatewayApplication.executor": "Run",
+    "Spring Boot.MsMatchApplication.executor": "Run",
+    "Spring Boot.MsNotificacionesApplication.executor": "Run",
     "Spring Boot.MsPadrinosApplication.executor": "Run",
+    "Spring Boot.MsReportesApplication.executor": "Run",
+    "Spring Boot.MsUsuarioApplication.executor": "Run",
     "Spring Boot.MsVisitasApplication.executor": "Run",
     "Spring Boot.MsVoluntariadosApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/ms-visitas",
+    "git-widget-placeholder": "feature/Docker",
+    "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack) parte 2/Centro-animal",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,7 +131,67 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.MsVisitasApplication">
+  <component name="RunManager" selected="Spring Boot.MsGatewayApplication">
+    <configuration name="MatchingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-match" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.centroanimal.ms_match.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.centroanimal.ms_match" />
+      <option name="MAIN_CLASS_NAME" value="com.centroanimal.ms_match.MatchingServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsMatchApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-match" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.centroanimal.ms_match.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.centroanimal.ms_match" />
+      <option name="MAIN_CLASS_NAME" value="com.centroanimal.ms_match.MsMatchApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificacionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-notificaciones" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.centroanimal.ms_notificaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.centroanimal.ms_notificaciones" />
+      <option name="MAIN_CLASS_NAME" value="com.centroanimal.ms_notificaciones.NotificacionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReporteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-reportes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.centroanimal.ms_reportes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.centroanimal.ms_reportes" />
+      <option name="MAIN_CLASS_NAME" value="com.centroanimal.ms_reportes.ReporteServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ms-usuario" />
       <method v="2">
@@ -122,69 +203,13 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="MsAdopcionesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MsGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="ms-adopciones" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_adopciones.MsAdopcionesApplication" />
+      <module name="ms-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centro_animal.ms_gateway.MsGatewayApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.centroanimal.ms_adopciones.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsDonacionesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="ms-donaciones" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_donaciones.MsDonacionesApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.centroanimal.ms_donaciones.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsPadrinosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="ms-padrinos" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_padrinos.MsPadrinosApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.centroanimal.ms_padrinos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsVisitasApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="ms-visitas" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_visitas.MsVisitasApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.centroanimal.ms_visitas.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsVoluntariadosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="ms-voluntariados" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.centroanimal.ms_voluntariados.MsVoluntariadosApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.centroanimal.ms_voluntariados.*" />
+          <option name="PATTERN" value="com.centro_animal.ms_gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MsVisitasApplication" />
-        <item itemvalue="Spring Boot.MsVoluntariadosApplication" />
-        <item itemvalue="Spring Boot.MsDonacionesApplication" />
-        <item itemvalue="Spring Boot.MsPadrinosApplication" />
-        <item itemvalue="Spring Boot.MsAdopcionesApplication" />
+        <item itemvalue="Spring Boot.MsGatewayApplication" />
+        <item itemvalue="JUnit.ReporteServiceTest" />
+        <item itemvalue="JUnit.NotificacionServiceTest" />
+        <item itemvalue="JUnit.MatchingServiceTest" />
+        <item itemvalue="JUnit.MsMatchApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +395,95 @@
       <option name="project" value="LOCAL" />
       <updated>1779395213043</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Base de datos">
+      <option name="closed" value="true" />
+      <created>1782170001154</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1782170001154</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Consitencia DTOs">
+      <option name="closed" value="true" />
+      <created>1782178479651</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1782178479651</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Manejo de excepciones">
+      <option name="closed" value="true" />
+      <created>1782184689453</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1782184689453</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Dependencia nueva">
+      <option name="closed" value="true" />
+      <created>1782186657113</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1782186657113</updated>
+    </task>
+    <task id="LOCAL-00025" summary="application.properties">
+      <option name="closed" value="true" />
+      <created>1782187812212</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1782187812212</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Swagger">
+      <option name="closed" value="true" />
+      <created>1782261881360</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1782261881360</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Swagger">
+      <option name="closed" value="true" />
+      <created>1782262506280</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1782262506280</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Swagger">
+      <option name="closed" value="true" />
+      <created>1782267149920</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1782267149920</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Pruebas">
+      <option name="closed" value="true" />
+      <created>1782277613491</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1782277613491</updated>
+    </task>
+    <task id="LOCAL-00030" summary="ms-gateway">
+      <option name="closed" value="true" />
+      <created>1782348503802</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1782348503802</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Docker">
+      <option name="closed" value="true" />
+      <created>1782431057587</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1782431057587</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +500,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="origin/feature/Docker" />
                       </list>
                     </value>
                   </entry>
@@ -400,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial deploy" />
     <MESSAGE value="Creación de entidad Usuario" />
     <MESSAGE value="Controller" />
     <MESSAGE value="Controller - postman" />
@@ -417,7 +529,16 @@
     <MESSAGE value="ms-voluntariados controller" />
     <MESSAGE value="ms-voluntariados" />
     <MESSAGE value="Creación de ms-visitas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creación de ms-visitas" />
+    <MESSAGE value="Base de datos" />
+    <MESSAGE value="Consitencia DTOs" />
+    <MESSAGE value="Manejo de excepciones" />
+    <MESSAGE value="Dependencia nueva" />
+    <MESSAGE value="application.properties" />
+    <MESSAGE value="Swagger" />
+    <MESSAGE value="Pruebas" />
+    <MESSAGE value="ms-gateway" />
+    <MESSAGE value="Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -426,6 +547,11 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>10</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/service/VisitaService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
