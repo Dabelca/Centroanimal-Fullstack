@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="ms-gateway">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-adopciones/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-animales/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-donaciones/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-gateway/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-match/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-notificaciones/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-padrinos/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-reportes/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-usuario/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-visitas/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-voluntariados/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql-init/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="Docker">
+      <change afterPath="$PROJECT_DIR$/ms-adopciones/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-padrinos/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-visitas/src/main/resources/application-docker.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-adopciones/src/main/java/com/centroanimal/ms_adopciones/client/AnimalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-adopciones/src/main/java/com/centroanimal/ms_adopciones/client/AnimalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-adopciones/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-adopciones/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/client/AnimalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/java/com/centroanimal/ms_padrinos/client/AnimalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-padrinos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-padrinos/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/client/AnimalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-visitas/src/main/java/com/centroanimal/ms_visitas/client/AnimalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-visitas/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-visitas/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="256" />
+    <option name="cachedIndexableFilesCount" value="269" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,58 +77,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MsUsuarioApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdopcionServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in ms-adopciones.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in ms-animales.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AnimalServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DonacionServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MatchingServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MsMatchApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.NotificacionServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PadrinoServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReporteServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UsuarioServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VisitaServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VoluntariadoServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.centro_animal.ms_animales in ms-animales.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MsAdopcionesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsAnimalesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsDonacionesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsMatchApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsNotificacionesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsPadrinosApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsReportesApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsUsuarioApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsVisitasApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsVoluntariadosApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/Docker&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MsUsuarioApplication.executor": "Run",
+    "JUnit.AdopcionServiceTest.executor": "Run",
+    "JUnit.All in ms-adopciones.executor": "Run",
+    "JUnit.All in ms-animales.executor": "Run",
+    "JUnit.AnimalServiceTest.executor": "Run",
+    "JUnit.DonacionServiceTest.executor": "Run",
+    "JUnit.MatchingServiceTest.executor": "Run",
+    "JUnit.MsMatchApplicationTests.executor": "Run",
+    "JUnit.NotificacionServiceTest.executor": "Run",
+    "JUnit.PadrinoServiceTest.executor": "Run",
+    "JUnit.ReporteServiceTest.executor": "Run",
+    "JUnit.UsuarioServiceTest.executor": "Run",
+    "JUnit.VisitaServiceTest.executor": "Run",
+    "JUnit.VoluntariadoServiceTest.executor": "Run",
+    "JUnit.com.centro_animal.ms_animales in ms-animales.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.MsAdopcionesApplication.executor": "Run",
+    "Spring Boot.MsAnimalesApplication.executor": "Run",
+    "Spring Boot.MsDonacionesApplication.executor": "Run",
+    "Spring Boot.MsGatewayApplication.executor": "Run",
+    "Spring Boot.MsMatchApplication.executor": "Run",
+    "Spring Boot.MsNotificacionesApplication.executor": "Run",
+    "Spring Boot.MsPadrinosApplication.executor": "Run",
+    "Spring Boot.MsReportesApplication.executor": "Run",
+    "Spring Boot.MsUsuarioApplication.executor": "Run",
+    "Spring Boot.MsVisitasApplication.executor": "Run",
+    "Spring Boot.MsVoluntariadosApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feature/Docker",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack) parte 2/Centro-animal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.MsGatewayApplication">
     <configuration name="MatchingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ms-match" />
@@ -481,7 +475,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782348503802</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Docker">
+      <option name="closed" value="true" />
+      <created>1782431057587</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1782431057587</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +500,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/feature/APIGateway" />
+                        <option value="origin/feature/Docker" />
                       </list>
                     </value>
                   </entry>
@@ -511,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial deploy" />
     <MESSAGE value="Creación de entidad Usuario" />
     <MESSAGE value="Controller" />
     <MESSAGE value="Controller - postman" />
@@ -536,7 +537,8 @@
     <MESSAGE value="Swagger" />
     <MESSAGE value="Pruebas" />
     <MESSAGE value="ms-gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="ms-gateway" />
+    <MESSAGE value="Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
