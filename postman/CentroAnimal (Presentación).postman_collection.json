@@ -1,0 +1,799 @@
+{
+  "info": {
+    "_postman_id": "7e2a7f08-b488-4652-b6ad-0c0148fa52d7",
+    "name": "CentroAnimal (Presentación)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54930989",
+    "_collection_link": "https://go.postman.co/collection/54930989-7e2a7f08-b488-4652-b6ad-0c0148fa52d7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "ms-visitas",
+      "item": [
+        {
+          "name": "Crear visita al centro",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"tipoVisita\": \"VISITA_CENTRO\",\r\n    \"fechaVisita\": \"2026-06-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/visitas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "visitas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear visita animal",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idAnimal\": 1,\r\n    \"tipoVisita\": \"VISITA_ANIMAL\",\r\n    \"fechaVisita\": \"2026-06-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/visitas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "visitas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear visita animal (Fallida)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idAnimal\": 999,\r\n    \"tipoVisita\": \"VISITA_ANIMAL\",\r\n    \"fechaVisita\": \"2026-06-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/visitas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "visitas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Confirmar visita",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/visitas/1/confirmar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "visitas",
+                "1",
+                "confirmar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "cancelar visita",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9096/api/visitas/1/cancelar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9096",
+              "path": [
+                "api",
+                "visitas",
+                "1",
+                "cancelar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar visitas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9096/api/visitas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9096",
+              "path": [
+                "api",
+                "visitas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ms-animales",
+      "item": [
+        {
+          "name": "Crear animal 1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Max\",\r\n    \"especie\": \"PERRO\",\r\n    \"raza\": \"Mestizo\",\r\n    \"edad\": 3,\r\n    \"estado\": \"DISPONIBLE\",\r\n    \"descripcion\": \"Perro juguetón y muy amigable con niños\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/v1/animales",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "v1",
+                "animales"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear animal 2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Señor bigote\",\r\n    \"especie\": \"GATO\",\r\n    \"raza\": \"Mixto\",\r\n    \"edad\": 2,\r\n    \"estado\": \"DISPONIBLE\",\r\n    \"descripcion\": \"Gato tranquilo y cariñoso\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/v1/animales",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "v1",
+                "animales"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear animal 3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Doña Tere\",\r\n    \"especie\": \"Tortuga\",\r\n    \"raza\": \"Tortuga de tierra\",\r\n    \"edad\": 8,\r\n    \"descripcion\": \"Tortuga tranquila y longeva, fácil de cuidar\",\r\n    \"estado\": \"DISPONIBLE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear animal 4",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Simba\",\r\n    \"especie\": \"Gato\",\r\n    \"raza\": \"Mixto\",\r\n    \"edad\": 4,\r\n    \"descripcion\": \"Gato independiente pero cariñoso con su dueño\",\r\n    \"estado\": \"ADOPTADO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/v1/animales",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "v1",
+                "animales"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar todos los animales",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/v1/animales",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "v1",
+                "animales"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar por estado (DISPONIBLE)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/v1/animales/estado/DISPONIBLE",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "v1",
+                "animales",
+                "estado",
+                "DISPONIBLE"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/api/v1/animales/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "v1",
+                "animales",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ms-usuario",
+      "item": [
+        {
+          "name": "Crear usuario 1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Daniela Beltran\",\r\n    \"rut\": \"12345678-9\",\r\n    \"correo\": \"daniela@gmail.com\",\r\n    \"telefono\": \"912345678\",\r\n    \"direccion\": \"Av. Principal 123\",\r\n    \"clave\": \"1234\",\r\n    \"rol\": \"ADMIN\"\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear usuario 2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Carlos Mendoza\",\r\n    \"rut\": \"98765432-1\",\r\n    \"correo\": \"carlos@gmail.com\",\r\n    \"telefono\": \"987654321\",\r\n    \"direccion\": \"Calle Los Pinos 456\",\r\n    \"clave\": \"5678\",\r\n    \"rol\": \"ADOPTANTE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear usuario 3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"María González\",\r\n    \"rut\": \"11223344-5\",\r\n    \"correo\": \"maria@gmail.com\",\r\n    \"telefono\": \"911223344\",\r\n    \"direccion\": \"Pasaje Las Flores 789\",\r\n    \"clave\": \"abcd\",\r\n    \"rol\": \"ADOPTANTE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear usuario 4",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Juan Pérez\",\r\n    \"rut\": \"55667788-9\",\r\n    \"correo\": \"juan@gmail.com\",\r\n    \"telefono\": \"955667788\",\r\n    \"direccion\": \"Av. Los Olmos 321\",\r\n    \"clave\": \"pass123\",\r\n    \"rol\": \"VOLUNTARIO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear usuario 5",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Andres Martínez\",\r\n    \"rut\": \"33445566-7\",\r\n    \"correo\": \"ana@gmail.com\",\r\n    \"telefono\": \"933445566\",\r\n    \"direccion\": \"Jr. Las Rosas 654\",\r\n    \"clave\": \"ana2024\",\r\n    \"rol\": \"PADRINO\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar usuarios",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "usuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/usuarios/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "usuarios",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ms-adopciones",
+      "item": [
+        {
+          "name": "Crear adopción (Exitosa)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idUsuario\": 1,\r\n    \"idAnimal\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9092/api/v1/adopciones",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9092",
+              "path": [
+                "api",
+                "v1",
+                "adopciones"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear adopción (fallida)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idUsuario\": 1,\r\n    \"idAnimal\": 999\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8082/api/v1/adopciones",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "v1",
+                "adopciones"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar adopciones",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/adopciones",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "v1",
+                "adopciones"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cambiar estado",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/api/v1/adopciones/1/estado?estado=APROBADA",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "api",
+                "v1",
+                "adopciones",
+                "1",
+                "estado"
+              ],
+              "query": [
+                {
+                  "key": "estado",
+                  "value": "APROBADA"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ms-donaciones",
+      "item": []
+    },
+    {
+      "name": "ms-voluntariados",
+      "item": []
+    },
+    {
+      "name": "New Folder",
+      "item": []
+    },
+    {
+      "name": "ms-reportes",
+      "item": []
+    },
+    {
+      "name": "ms-notificaciones",
+      "item": []
+    },
+    {
+      "name": "ms-padrinos",
+      "item": [
+        {
+          "name": "Crear padrino",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idUsuario\": 1,\r\n    \"idAnimal\": 1,\r\n    \"montoCuota\": 20000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8084/api/v1/padrinos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8084",
+              "path": [
+                "api",
+                "v1",
+                "padrinos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear padrino (Fallido)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idUsuario\": 1,\r\n    \"idAnimal\": 999,\r\n    \"montoCuota\": 20000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9094/api/v1/padrinos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9094",
+              "path": [
+                "api",
+                "v1",
+                "padrinos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8084/api/v1/padrinos/1/cuota?montoCuota=25000",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8084",
+              "path": [
+                "api",
+                "v1",
+                "padrinos",
+                "1",
+                "cuota"
+              ],
+              "query": [
+                {
+                  "key": "montoCuota",
+                  "value": "25000"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ms-gateway",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Docker",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
