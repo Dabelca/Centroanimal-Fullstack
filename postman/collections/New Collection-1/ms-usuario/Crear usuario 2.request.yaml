@@ -1,0 +1,24 @@
+$kind: http-request
+name: Crear usuario 2
+url: http://localhost:8080/api/v1/usuarios
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Carlos Mendoza\",\r
+
+    \    \"rut\": \"98765432-1\",\r
+
+    \    \"correo\": \"carlos@gmail.com\",\r
+
+    \    \"telefono\": \"987654321\",\r
+
+    \    \"direccion\": \"Calle Los Pinos 456\",\r
+
+    \    \"clave\": \"5678\",\r
+
+    \    \"rol\": \"ADOPTANTE\"\r
+
+    }"
+order: 2947709941986486

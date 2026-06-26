@@ -1,6 +1,7 @@
 package com.centro_animal.ms_animales.controller;
 
 import com.centro_animal.ms_animales.dto.AnimalDTO;
+import com.centro_animal.ms_animales.dto.AnimalUpdateDTO;
 import com.centro_animal.ms_animales.model.Animal;
 import com.centro_animal.ms_animales.service.AnimalService;
 import jakarta.validation.Valid;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
@@ -67,15 +69,15 @@ public class AnimalController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Animal> actualizar(@PathVariable Long id, @RequestBody Animal animal) {
+    public ResponseEntity<Animal> actualizar(@PathVariable Long id, @Valid @RequestBody AnimalUpdateDTO animalUpdateDTO) {
         try {
             Animal ani = animalService.findById(id);
-            ani.setNombre(animal.getNombre());
-            ani.setEspecie(animal.getEspecie());
-            ani.setRaza(animal.getRaza());
-            ani.setEdad(animal.getEdad());
-            ani.setDescripcion(animal.getDescripcion());
-            ani.setEstado(animal.getEstado());
+            ani.setNombre(animalUpdateDTO.getNombre());
+            ani.setEspecie(animalUpdateDTO.getEspecie());
+            ani.setRaza(animalUpdateDTO.getRaza());
+            ani.setEdad(animalUpdateDTO.getEdad());
+            ani.setDescripcion(animalUpdateDTO.getDescripcion());
+            ani.setEstado(animalUpdateDTO.getEstado());
             animalService.save(ani);
             return ResponseEntity.ok(ani);
         } catch (Exception e) {

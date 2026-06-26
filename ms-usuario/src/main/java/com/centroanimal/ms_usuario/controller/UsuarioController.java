@@ -51,17 +51,16 @@ public class UsuarioController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Usuario> actualizar(@PathVariable Long id, @RequestBody Usuario usuario) {
+    public ResponseEntity<Usuario> actualizar(@PathVariable Long id, @Valid @RequestBody UsuarioDTO usuarioDTO) {
       try {
           Usuario usu = usuarioService.findById(id);
-          usu.setId(id);
-          usu.setNombre(usuario.getNombre());
-          usu.setRut(usuario.getRut());
-          usu.setCorreo(usuario.getCorreo());
-          usu.setTelefono(usuario.getTelefono());
-          usu.setDireccion(usuario.getDireccion());
-          usu.setClave(usuario.getClave());
-          usu.setRol(usuario.getRol());
+          usu.setNombre(usuarioDTO.getNombre());
+          usu.setRut(usuarioDTO.getRut());
+          usu.setCorreo(usuarioDTO.getCorreo());
+          usu.setTelefono(usuarioDTO.getTelefono());
+          usu.setDireccion(usuarioDTO.getDireccion());
+          usu.setClave(usuarioDTO.getClave());
+          usu.setRol(usuarioDTO.getRol());
 
           usuarioService.save(usu);
           return ResponseEntity.ok(usu);

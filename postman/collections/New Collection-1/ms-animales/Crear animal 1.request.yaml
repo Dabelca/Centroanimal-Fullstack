@@ -1,0 +1,22 @@
+$kind: http-request
+name: Crear animal 1
+url: http://localhost:8081/api/v1/animales
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Max\",\r
+
+    \    \"especie\": \"PERRO\",\r
+
+    \    \"raza\": \"Mestizo\",\r
+
+    \    \"edad\": 3,\r
+
+    \    \"estado\": \"DISPONIBLE\",\r
+
+    \    \"descripcion\": \"Perro juguetón y muy amigable con niños\"\r
+
+    }"
+order: 1779909840618

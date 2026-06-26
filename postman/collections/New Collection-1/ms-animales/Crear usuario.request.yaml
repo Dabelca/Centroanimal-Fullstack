@@ -1,0 +1,22 @@
+$kind: http-request
+name: Crear usuario
+url: ""
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"nombre\": \"Simba\",\r
+
+    \    \"especie\": \"Gato\",\r
+
+    \    \"raza\": \"Mixto\",\r
+
+    \    \"edad\": 4,\r
+
+    \    \"descripcion\": \"Gato independiente pero cariñoso con su dueño\",\r
+
+    \    \"estado\": \"ADOPTADO\"\r
+
+    }"
+order: 3656797951428708
