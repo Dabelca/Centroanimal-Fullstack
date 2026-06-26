@@ -1,0 +1,204 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Annotation profile for ms-donaciones\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <processorPath useClasspath=\"false\">\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n        </processorPath>\r\n        <module name=\"ms-usuario\" />\r\n      </profile>\r\n      <profile name=\"Annotation profile for ms-donaciones\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <processorPath useClasspath=\"false\">\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n        </processorPath>\r\n        <module name=\"ms-donaciones\" />\r\n        <module name=\"ms-animales\" />\r\n        <module name=\"ms-adopciones\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"ms-adopcion\" target=\"21\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n  <component name=\"JavacSettings\">\r\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\r\n      <module name=\"ms-adopcion\" options=\"-parameters\" />\r\n      <module name=\"ms-adopciones\" options=\"-parameters\" />\r\n      <module name=\"ms-animales\" options=\"-parameters\" />\r\n      <module name=\"ms-donaciones\" options=\"-parameters\" />\r\n      <module name=\"ms-usuario\" options=\"-parameters\" />\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 956d82464496308afa877dff943d6080ebb559dc)
++++ b/.idea/compiler.xml	(date 1782167442964)
+@@ -2,30 +2,27 @@
+ <project version="4">
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+-      <profile name="Annotation profile for ms-donaciones" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-        <processorPath useClasspath="false">
+-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+-        </processorPath>
+-        <module name="ms-usuario" />
+-      </profile>
+-      <profile name="Annotation profile for ms-donaciones" enabled="true">
++      <profile name="Annotation profile for ms-usuario" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+         <processorPath useClasspath="false">
+           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+         </processorPath>
+         <module name="ms-donaciones" />
++        <module name="ms-usuario" />
+         <module name="ms-animales" />
+         <module name="ms-adopciones" />
+       </profile>
+     </annotationProcessing>
+     <bytecodeTargetLevel>
+       <module name="ms-adopcion" target="21" />
++      <module name="ms-match" target="21" />
++      <module name="ms-notificaciones" target="21" />
++      <module name="ms-padrinos" target="21" />
++      <module name="ms-reportes" target="21" />
++      <module name="ms-visitas" target="21" />
++      <module name="ms-voluntariados" target="21" />
+     </bytecodeTargetLevel>
+   </component>
+   <component name="JavacSettings">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b6d855f4-8e16-4c3b-a36d-e0baa8396e02\" name=\"Changes\" comment=\"controller ms-adopciones\">\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/.gitattributes\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/.mvn/wrapper/maven-wrapper.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/mvnw\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/mvnw.cmd\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/src/main/java/com/centroanimal/ms_adopciones/MsAdopcionesApplication.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/src/main/resources/application.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-adopciones/src/test/java/com/centroanimal/ms_adopciones/MsAdopcionesApplicationTests.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/.ai/mcp/mcp.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/.gitattributes\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/.mvn/wrapper/maven-wrapper.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/mvnw\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/mvnw.cmd\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/src/main/java/com/centro_animal/ms_animales/MsAnimalesApplication.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/src/main/resources/application.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-animales/src/test/java/com/centro_animal/ms_animales/MsAnimalesApplicationTests.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/.gitattributes\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/.mvn/wrapper/maven-wrapper.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/mvnw\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/mvnw.cmd\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/pom.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/MsDonacionesApplication.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/src/main/resources/application.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ms-donaciones/src/test/java/com/centroanimal/ms_donaciones/MsDonacionesApplicationTests.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/compiler.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/compiler.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/encodings.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <list default=\"true\" id=\"b6d855f4-8e16-4c3b-a36d-e0baa8396e02\" name=\"Changes\" comment=\"controller ms-adopciones\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"EmbeddingIndexingInfo\">\r\n    <option name=\"cachedIndexableFilesCount\" value=\"53\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"feature/ms-adopciones\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Dabelca&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Dabelca/Centroanimal-Fullstack.git&quot;,\r\n    &quot;accountId&quot;: &quot;21eebe2b-e387-4094-8643-bb5cad6d033f&quot;\r\n  }\r\n}</component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"McpProjectServerCommands\">\r\n    <commands />\r\n    <urls />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8,\r\n  &quot;fromUser&quot;: false\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3DoPGkjsfiYCR1MeBNwm4NJMLcQ\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.MsUsuarioApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;JUnit.All in ms-animales.executor&quot;: &quot;Run&quot;,\r\n    &quot;JUnit.com.centro_animal.ms_animales in ms-animales.executor&quot;: &quot;Run&quot;,\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\r\n    &quot;Spring Boot.MsAdopcionesApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;Spring Boot.MsAnimalesApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;feature/ms-adopciones&quot;,\r\n    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,\r\n    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Spring Boot.MsAdopcionesApplication\">\r\n    <configuration name=\"MsUsuarioApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.centroanimal.ms_usuario.MsUsuarioApplication\" />\r\n      <module name=\"ms-usuario\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.centroanimal.ms_usuario.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"All in ms-animales\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ms-animales\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"package\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"com.centro_animal.ms_animales in ms-animales\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ms-animales\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.centro_animal.ms_animales.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.centro_animal.ms_animales\" />\r\n      <option name=\"TEST_OBJECT\" value=\"package\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"ms-usuario\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"ms-usuario\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"MsAdopcionesApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"FRAME_DEACTIVATION_UPDATE_POLICY\" value=\"UnknownPolicyInFreeMode\" />\r\n      <module name=\"ms-adopciones\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.centroanimal.ms_adopciones.MsAdopcionesApplication\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.centroanimal.ms_adopciones.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MsAnimalesApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"FRAME_DEACTIVATION_UPDATE_POLICY\" value=\"UnknownPolicyInFreeMode\" />\r\n      <module name=\"ms-animales\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.centro_animal.ms_animales.MsAnimalesApplication\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.centro_animal.ms_animales.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MsDonacionesApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"FRAME_DEACTIVATION_UPDATE_POLICY\" value=\"UnknownPolicyInFreeMode\" />\r\n      <module name=\"ms-donaciones\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.centroanimal.ms_donaciones.MsDonacionesApplication\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.centroanimal.ms_donaciones.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Spring Boot.MsDonacionesApplication\" />\r\n        <item itemvalue=\"Spring Boot.MsAdopcionesApplication\" />\r\n        <item itemvalue=\"Spring Boot.MsAnimalesApplication\" />\r\n        <item itemvalue=\"JUnit.com.centro_animal.ms_animales in ms-animales\" />\r\n        <item itemvalue=\"JUnit.All in ms-animales\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b6d855f4-8e16-4c3b-a36d-e0baa8396e02\" name=\"Changes\" comment=\"\" />\r\n      <created>1778945360809</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1778945360809</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"initial deploy\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1778955261350</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1778955261350</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"initial deploy\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1778955494268</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1778955494268</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Creación de entidad Usuario\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1778960582405</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1778960582405</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Controller\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779049908338</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779049908338</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Controller - postman\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779057121059</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779057121059</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"ms-usuario basico\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779067269257</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779067269257</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"creación de ms-animales\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779072485429</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779072485429</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"ms-animales Basico\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779078909636</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779078909636</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"creación de ms-adopciones\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779156080153</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779156080153</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"controller ms-adopciones\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779157996590</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779157996590</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ms-adopciones CRS y CRUD\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779159823305</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779159823305</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Creación ms-donaciones\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779161726985</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779161726985</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"HEAD\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"initial deploy\" />\r\n    <MESSAGE value=\"Creación de entidad Usuario\" />\r\n    <MESSAGE value=\"Controller\" />\r\n    <MESSAGE value=\"Controller - postman\" />\r\n    <MESSAGE value=\"ms-usuario basico\" />\r\n    <MESSAGE value=\"creación de ms-animales\" />\r\n    <MESSAGE value=\"ms-animales Basico\" />\r\n    <MESSAGE value=\"creación de ms-adopciones\" />\r\n    <MESSAGE value=\"controller ms-adopciones\" />\r\n    <MESSAGE value=\"ms-adopciones CRS y CRUD\" />\r\n    <MESSAGE value=\"Creación ms-donaciones\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Creación ms-donaciones\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Main.java</url>\r\n          <line>10</line>\r\n          <option name=\"timeStamp\" value=\"2\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 956d82464496308afa877dff943d6080ebb559dc)
++++ b/.idea/workspace.xml	(date 1782167502513)
+@@ -5,40 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="controller ms-adopciones">
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/.gitattributes" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/mvnw" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/mvnw.cmd" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/src/main/java/com/centroanimal/ms_adopciones/MsAdopcionesApplication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/src/main/resources/application.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-adopciones/src/test/java/com/centroanimal/ms_adopciones/MsAdopcionesApplicationTests.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/.ai/mcp/mcp.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/.gitattributes" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/mvnw" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/mvnw.cmd" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/src/main/java/com/centro_animal/ms_animales/MsAnimalesApplication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/src/main/resources/application.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-animales/src/test/java/com/centro_animal/ms_animales/MsAnimalesApplicationTests.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/.gitattributes" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/mvnw" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/mvnw.cmd" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/src/main/java/com/centroanimal/ms_donaciones/MsDonacionesApplication.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/src/main/resources/application.properties" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ms-donaciones/src/test/java/com/centroanimal/ms_donaciones/MsDonacionesApplicationTests.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+-    <list default="true" id="b6d855f4-8e16-4c3b-a36d-e0baa8396e02" name="Changes" comment="controller ms-adopciones" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -58,7 +27,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="feature/ms-adopciones" />
++        <entry key="$PROJECT_DIR$" value="feature/Flyway&amp;Feing" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -95,48 +64,35 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.MsUsuarioApplication.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.All in ms-animales.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.com.centro_animal.ms_animales in ms-animales.executor&quot;: &quot;Run&quot;,
+-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+-    &quot;Spring Boot.MsAdopcionesApplication.executor&quot;: &quot;Run&quot;,
+-    &quot;Spring Boot.MsAnimalesApplication.executor&quot;: &quot;Run&quot;,
+-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;feature/ms-adopciones&quot;,
+-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.MsUsuarioApplication.executor": "Run",
++    "JUnit.All in ms-animales.executor": "Run",
++    "JUnit.com.centro_animal.ms_animales in ms-animales.executor": "Run",
++    "ModuleVcsDetector.initialDetectionPerformed": "true",
++    "RunOnceActivity.MCP Project settings loaded": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
++    "Spring Boot.MsAdopcionesApplication.executor": "Run",
++    "Spring Boot.MsAnimalesApplication.executor": "Run",
++    "codeWithMe.voiceChat.enabledByDefault": "false",
++    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
++    "git-widget-placeholder": "main",
++    "junie.onboarding.icon.badge.shown": "true",
++    "kotlin-language-version-configured": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "onboarding.tips.debug.path": "C:/Users/Dabel/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java",
++    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
++    "to.speed.mode.migration.done": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RunManager" selected="Spring Boot.MsAdopcionesApplication">
+-    <configuration name="MsUsuarioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="com.centroanimal.ms_usuario.MsUsuarioApplication" />
+-      <module name="ms-usuario" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.centroanimal.ms_usuario.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+     <configuration name="All in ms-animales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="ms-animales" />
+       <option name="PACKAGE_NAME" value="" />
+@@ -215,8 +171,8 @@
+     <recent_temporary>
+       <list>
+         <item itemvalue="Spring Boot.MsDonacionesApplication" />
++        <item itemvalue="Spring Boot.MsAnimalesApplication" />
+         <item itemvalue="Spring Boot.MsAdopcionesApplication" />
+-        <item itemvalue="Spring Boot.MsAnimalesApplication" />
+         <item itemvalue="JUnit.com.centro_animal.ms_animales in ms-animales" />
+         <item itemvalue="JUnit.All in ms-animales" />
+       </list>
+@@ -373,7 +329,7 @@
+     <breakpoint-manager>
+       <breakpoints>
+         <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/Main.java</url>
++          <url>file://$USER_HOME$/OneDrive/Desktop/Centro-animal (Fullstack)/Centro-animal/src/Main.java</url>
+           <line>10</line>
+           <option name="timeStamp" value="2" />
+         </line-breakpoint>

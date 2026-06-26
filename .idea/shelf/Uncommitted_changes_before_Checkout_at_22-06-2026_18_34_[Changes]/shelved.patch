@@ -1,0 +1,37 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Annotation profile for ms-usuario\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <processorPath useClasspath=\"false\">\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n        </processorPath>\r\n        <module name=\"ms-donaciones\" />\r\n        <module name=\"ms-usuario\" />\r\n        <module name=\"ms-padrinos\" />\r\n        <module name=\"ms-animales\" />\r\n        <module name=\"ms-adopciones\" />\r\n      </profile>\r\n      <profile name=\"Annotation profile for ms-voluntariados\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <processorPath useClasspath=\"false\">\r\n          <entry name=\"$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar\" />\r\n        </processorPath>\r\n        <module name=\"ms-voluntariados\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"ms-adopcion\" target=\"21\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n  <component name=\"JavacSettings\">\r\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\r\n      <module name=\"ms-adopcion\" options=\"-parameters\" />\r\n      <module name=\"ms-adopciones\" options=\"-parameters\" />\r\n      <module name=\"ms-animales\" options=\"-parameters\" />\r\n      <module name=\"ms-donaciones\" options=\"-parameters\" />\r\n      <module name=\"ms-padrinos\" options=\"-parameters\" />\r\n      <module name=\"ms-usuario\" options=\"-parameters\" />\r\n      <module name=\"ms-voluntariados\" options=\"-parameters\" />\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 338937dae21862a4d83ae5d531be1ed6c8f952f4)
++++ b/.idea/compiler.xml	(date 1782167572900)
+@@ -2,14 +2,10 @@
+ <project version="4">
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+-      <profile name="Annotation profile for ms-usuario" enabled="true">
++      <profile name="Maven default annotation processors profile" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+-        <processorPath useClasspath="false">
+-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+-        </processorPath>
+         <module name="ms-donaciones" />
+         <module name="ms-usuario" />
+         <module name="ms-padrinos" />
+@@ -28,6 +24,10 @@
+     </annotationProcessing>
+     <bytecodeTargetLevel>
+       <module name="ms-adopcion" target="21" />
++      <module name="ms-match" target="21" />
++      <module name="ms-notificaciones" target="21" />
++      <module name="ms-reportes" target="21" />
++      <module name="ms-visitas" target="21" />
+     </bytecodeTargetLevel>
+   </component>
+   <component name="JavacSettings">

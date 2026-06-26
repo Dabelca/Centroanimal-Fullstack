@@ -2,20 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Annotation profile for ms-usuario" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-        </processorPath>
-        <module name="ms-donaciones" />
-        <module name="ms-usuario" />
-        <module name="ms-padrinos" />
-        <module name="ms-animales" />
-        <module name="ms-adopciones" />
-      </profile>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Annotation profile for ms-voluntariados" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -25,9 +12,24 @@
         </processorPath>
         <module name="ms-voluntariados" />
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-donaciones" />
+        <module name="ms-usuario" />
+        <module name="ms-padrinos" />
+        <module name="ms-animales" />
+        <module name="ms-adopciones" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ms-adopcion" target="21" />
+      <module name="ms-gateway" target="21" />
+      <module name="ms-match" target="21" />
+      <module name="ms-notificaciones" target="21" />
+      <module name="ms-reportes" target="21" />
+      <module name="ms-visitas" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
