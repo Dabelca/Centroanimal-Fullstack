@@ -31,6 +31,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_usuario?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -46,6 +47,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_animales?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -61,6 +63,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_adopciones?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -76,6 +79,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_donaciones?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -91,6 +95,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_padrinos?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -106,6 +111,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_voluntariados?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -121,6 +127,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_visitas?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -136,6 +143,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_match?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -151,6 +159,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_notificaciones?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -166,6 +175,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-local:3306/db_reportes?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_URI: http://ms-eureka:9761/eureka/
     networks:
       - centroanimal-network
 
@@ -177,6 +187,15 @@ services:
     depends_on:
       - ms-animales
       - ms-usuario
+      - ms-eureka
+    networks:
+      - centroanimal-network
+
+  ms-eureka:
+    build: ./ms-eureka
+    container_name: ms-eureka
+    ports:
+      - "9761:9761"
     networks:
       - centroanimal-network
 
